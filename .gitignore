@@ -158,4 +158,9 @@ fabric.properties
 .idea/encodings.xml
 .idea/compiler.xml
 .idea/
-slowcampus.iml
+
+**/.idea/workspace.xml
+**/.idea/tasks.xml
+**/.idea/vcs.xml
+
+springboard.iml
