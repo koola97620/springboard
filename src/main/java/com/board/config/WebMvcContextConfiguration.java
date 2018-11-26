@@ -18,6 +18,10 @@ public class WebMvcContextConfiguration extends WebMvcConfigurerAdapter {
 
 
     // default tomcat의 servlet handler를 사용하게 합니다.
+    // '/' 요청은 모든 요청을 말합니다. 이 요청은 원래 WAS 의 Default Servlet 가 처리해줍니다.
+    // '/' url을 처리하는 새 서블릿을 만들었는데, 만약 새 서블릿이 요청을 처리하지 못하면,
+    // 디폴트 서블릿이 처리하게끔 넘겨줍니다.
+    // 누가? DispatcherServlet이.
     @Override
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
         configurer.enable();
