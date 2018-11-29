@@ -1,0 +1,4 @@
+package com.board.dao;
+
+public interface ImageDao {
+}
